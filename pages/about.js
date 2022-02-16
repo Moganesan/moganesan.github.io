@@ -7,19 +7,21 @@ import FrontendDevelopment from "../public/services/frontend.svg";
 
 const About = () => {
   return (
-    <div className="mb-16 p-20">
-      <h2 className="text-black2 font-bold text-center text-5xl">About Me</h2>
-      <div className="flex items-center justify-center self-center mt-10">
+    <div className="sm:p-10 md:p-0 dark:bg-darkBackground2">
+      <h2 className="text-black2 md:text-4xl font-bold text-center dark:text-grey text-5xl smb:mt-10">
+        About Me😊
+      </h2>
+      <div className="flex smb:flex-col md:px-28 md:mt-0 md:flex-row items-center self-center justify-center sm:mt-10">
         <div className="w-72 rounded-xl overflow-hidden flex items-center justify-center mt-10">
           <Image src={Profile} />
         </div>
-        <div className="ml-40 w-1/2">
+        <div className="smb:mt-5 smb:w-full smb:p-5 md:ml-20 md:mt-0 md:p-10 md:w-full sm:ml-40 w-1/2">
           <h3 className="text-3xl font-bold text-purple">Learn about me</h3>
-          <p className="text-2xl font-Russo-One text-black2 mt-4">
+          <p className="text-2xl font-Russo-One text-black2 mt-4 dark:text-white">
             I'm Moganesan, Im a Full-Stack Web <br></br> & Mobile Application
             Developer.
           </p>
-          <p className="text-black2 mt-5 font-medium">
+          <p className="text-black2 mt-5 font-medium dark:text-white">
             Love computers & programming. I can develop any kind of web and
             mobile applications with latest trending technologies, and i love to
             do this. I only use cross platform trending technologies so your
@@ -49,9 +51,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mt-20">
-        <h2 className="font-bold text-3xl text-black2">My Services:</h2>
-        <div className="grid grid-cols-2 text-center place-items-center gap-20 mt-28">
+      <div className="mt-20 smb:p-10 sm:p-20">
+        <h2 className="font-bold text-3xl text-black2 dark:text-white">
+          🤞🏻My Services:
+        </h2>
+        <div className="smb:grid-cols-1 grid md:grid-cols-2 text-center place-items-center gap-20 mt-28">
           <div>
             <Image src={FrontendDevelopment} />
             <p className="font-bold text-xl mt-5">Frontend Development</p>

@@ -23,6 +23,10 @@ a {
   color: #040303;
 }
 
+.active-dark {
+  color: #764abc;
+}
+
 /* Hero Component */
 .anime {
   animation: breathe 7s linear infinite;

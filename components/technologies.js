@@ -14,11 +14,11 @@ import Image from "next/image";
 
 const Technologies = () => {
   return (
-    <div className="p-16 bg-white">
-      <h2 className="text-center text-3xl text-black font-bold mb-10">
-        Technologies i work with
+    <div className="p-16 dark:bg-darkBackground2 bg-white">
+      <h2 className="text-center text-3xl text-black font-bold mb-10 dark:text-white">
+        Technologies i work with🪛
       </h2>
-      <div className="grid grid-cols-4  gap-10 justify-center justify-items-center justify-self-center content-center items-center">
+      <div className="grid smb:grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10 justify-center justify-items-center justify-self-center content-center items-center">
         <div className="hover:animate-pulse">
           <Image src={Html} />
         </div>

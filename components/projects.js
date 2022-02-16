@@ -24,16 +24,18 @@ const Projects = () => {
       }}
     >
       <SplideSlide>
-        <div className="grid grid-cols-2 p-20 items-center self-center">
+        <div className="grid smb:grid-cols-1 sm:grid-cols-2 smb:p-5 sm:p-20 p-20 items-center dark:text-black2 self-center">
           <div>
-            <h2 className="text-black2 font-bold text-4xl">Recent Work</h2>
-            <div className="w-52 mt-6">
+            <h2 className="text-black2 font-bold smb:text-2xl sm:text-4xl text-4xl">
+              Recent Work
+            </h2>
+            <div className="w-52 smb:w-40 sm:w-52 smb:mt-3 sm:mt-6">
               <Image src={NanbanLogo} />
             </div>
-            <p className="w-96 text-2xl mt-11">
+            <p className="w-full text-2xl sm:mt-11">
               A social media platform for schools and college students.
             </p>
-            <div className="flex mt-10 items-center">
+            <div className="flex smb:mt-5 sm:mt-10 items-center">
               <div className="w-16">
                 <Image width={100} src={ReactLogo} />
               </div>
@@ -45,22 +47,24 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="smb:mt-5">
             <Image src={NanbanScreen} />
           </div>
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div className="grid grid-cols-2 p-20 items-center self-center">
+        <div className="grid smb:grid-cols-1 sm:grid-cols-2 smb:p-5 sm:p-20 p-20 items-center dark:text-black2 self-center">
           <div>
-            <h2 className="text-black2 font-bold text-4xl">Recent Work</h2>
-            <div className="w-52 mt-6">
+            <h2 className="text-black2 font-bold smb:text-2xl sm:text-4xl text-4xl">
+              Recent Work
+            </h2>
+            <div className="w-52 smb:w-40 sm:w-52 smb:mt-3 sm:mt-6">
               <Image src={KlvinLogo} />
             </div>
-            <p className="w-96 text-2xl mt-11">
+            <p className="w-full text-2xl sm:mt-11">
               Complete School and College Mangement System.
             </p>
-            <div className="flex mt-10 items-center">
+            <div className="flex smb:mt-5 sm:mt-10 items-center">
               <div className="w-16">
                 <Image width={100} src={ReactLogo} />
               </div>
@@ -81,7 +85,7 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <div className="flex">
+          <div className="smb:mt-10">
             <Image src={KlvienImage} />
           </div>
         </div>
