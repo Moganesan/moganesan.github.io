@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Logo from "../public/logo.svg";
 import Image from "next/image";
 import GithubLogo from "../public/technologyIcons/github.svg";
@@ -20,10 +20,6 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
 
   const [mobileMenu, setMobileMenu] = useState(false);
-
-  useEffect(() => {
-    console.log(theme);
-  }, []);
 
   const menus = [
     {
@@ -86,9 +82,9 @@ const Header = () => {
         </div>
         {mobileMenu ? (
           <Modal>
-            <div className="fixed w-full h-full top-0 left-0 right-0 bottom-0 flex items-center justify-center transparant-black">
+            <div className="fixed dark:text-black2 w-full h-full top-0 left-0 right-0 bottom-0 flex items-center justify-center transparant-black">
               <ul className="bg-white px-20 p-5 flex flex-col items-center rounded-lg">
-                <Link href="/">
+                <Link passHref href="/">
                   <li
                     className={`${"px-5 p-2 mt-5 font-bold rounded-lg duration-500 text-xl hover:bg-purple hover:text-white border-2"} ${
                       router.pathname == "/"
@@ -99,7 +95,7 @@ const Header = () => {
                     Home
                   </li>
                 </Link>
-                <Link href="/about">
+                <Link passHref href="/about">
                   <li
                     className={`${"px-5 p-2 mt-5 font-bold rounded-lg duration-500 text-xl hover:bg-purple hover:text-white border-2"} ${
                       router.pathname == "/about"
@@ -110,7 +106,7 @@ const Header = () => {
                     About
                   </li>
                 </Link>
-                <Link href="/work">
+                <Link passHref href="/work">
                   <li
                     className={`${"px-5 p-2 mt-5 font-bold rounded-lg duration-500 text-xl hover:bg-purple hover:text-white border-2"} ${
                       router.pathname == "/work"
@@ -121,7 +117,7 @@ const Header = () => {
                     Work
                   </li>
                 </Link>
-                <Link href="/contact">
+                <Link passHref href="/contact">
                   <li
                     className={`${"px-5 p-2 mt-5 font-bold rounded-lg duration-500 text-xl hover:bg-purple hover:text-white border-2"} ${
                       router.pathname == "/contact"
@@ -134,7 +130,7 @@ const Header = () => {
                 </Link>
                 <li className="mt-5">
                   <button onClick={() => setMobileMenu(!mobileMenu)}>
-                    <Image src={CloseIcon} />
+                    <Image alt="close" src={CloseIcon} />
                   </button>
                 </li>
               </ul>
@@ -144,11 +140,20 @@ const Header = () => {
 
         <ul className="smb:flex flex-auto justify-around sm:hidden">
           <li className="flex items-center">
-            <a target={"_blank"} href="https://github.com/Moganesan/">
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://github.com/Moganesan/"
+            >
               {theme == "light" ? (
-                <Image width={35} height={35} src={GithubLogo} />
+                <Image alt="github" width={35} height={35} src={GithubLogo} />
               ) : (
-                <Image width={35} height={35} src={GithubLogoWhite} />
+                <Image
+                  alt="github"
+                  width={35}
+                  height={35}
+                  src={GithubLogoWhite}
+                />
               )}
             </a>
           </li>
@@ -157,20 +162,20 @@ const Header = () => {
               onClick={() => setTheme(theme == "light" ? "dark" : "light")}
             >
               {theme == "light" ? (
-                <Image width={35} height={35} src={MoonLogo} />
+                <Image alt="dark" width={35} height={35} src={MoonLogo} />
               ) : (
-                <Image width={35} height={35} src={SunLogo} />
+                <Image alt="light" width={35} height={35} src={SunLogo} />
               )}
             </button>
           </li>
           <li className="flex items-center">
             {theme == "light" ? (
               <button onClick={() => setMobileMenu(!mobileMenu)}>
-                <Image src={Menu} />
+                <Image alt="menu" src={Menu} />
               </button>
             ) : (
               <button onClick={() => setMobileMenu(!mobileMenu)}>
-                <Image src={MenuWhite} />
+                <Image alt="menu" src={MenuWhite} />
               </button>
             )}
           </li>
@@ -186,11 +191,20 @@ const Header = () => {
           ))}
 
           <li className="flex items-center">
-            <a target={"_blank"} href="https://github.com/Moganesan/">
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://github.com/Moganesan/"
+            >
               {theme == "light" ? (
-                <Image width={40} height={40} src={GithubLogo} />
+                <Image alt="github" width={40} height={40} src={GithubLogo} />
               ) : (
-                <Image width={40} height={40} src={GithubLogoWhite} />
+                <Image
+                  alt="github"
+                  width={40}
+                  height={40}
+                  src={GithubLogoWhite}
+                />
               )}
             </a>
           </li>
@@ -199,9 +213,9 @@ const Header = () => {
               onClick={() => setTheme(theme == "light" ? "dark" : "light")}
             >
               {theme == "light" ? (
-                <Image width={40} height={40} src={MoonLogo} />
+                <Image alt="dark" width={40} height={40} src={MoonLogo} />
               ) : (
-                <Image width={40} height={40} src={SunLogo} />
+                <Image alt="light" width={40} height={40} src={SunLogo} />
               )}
             </button>
           </li>

@@ -14,46 +14,46 @@ import Image from "next/image";
 
 const Technologies = () => {
   return (
-    <div className="p-16 dark:bg-darkBackground2 bg-white">
-      <h2 className="text-center text-3xl text-black font-bold mb-10 dark:text-white">
+    <div className="sm:p-16 smb:p-5 smb:py-16 dark:bg-darkBackground2 bg-white">
+      <h2 className="text-center text-3xl smb:w-full text-black font-bold mb-10 dark:text-white">
         Technologies i work with🪛
       </h2>
       <div className="grid smb:grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10 justify-center justify-items-center justify-self-center content-center items-center">
         <div className="hover:animate-pulse">
-          <Image src={Html} />
+          <Image alt="html" src={Html} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Css} />
+          <Image alt="css" src={Css} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={React} />
+          <Image alt="react" src={React} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Redux} />
+          <Image alt="redux" src={Redux} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Next} />
+          <Image alt="next" src={Next} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Tailwind} />
+          <Image alt="tailwind" src={Tailwind} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Figma} />
+          <Image alt="figma" src={Figma} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Node} />
+          <Image alt="node" src={Node} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Firebase} />
+          <Image alt="firebase" src={Firebase} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Npm} />
+          <Image alt="npm" src={Npm} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Python} />
+          <Image alt="python" src={Python} />
         </div>
         <div className="hover:animate-pulse">
-          <Image src={Linux} />
+          <Image alt="linux" src={Linux} />
         </div>
       </div>
     </div>

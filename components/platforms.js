@@ -2,16 +2,16 @@ import CoverImage from "../public/platforms.jpg";
 import Image from "next/image";
 const Platforms = () => {
   return (
-    <div className="bg-grey3 p-16">
-      <h2 className="font-bold text-black2 text-4xl">
-        We develop applications for all platform.
+    <div className="bg-grey3 smb:p-5 sm:p-16">
+      <h2 className="font-bold text-black2 smb:text-xl sm:text-4xl">
+        I can develop applications for all platform.
       </h2>
       <p className="text-black2">
-        we are using cross platform development freamworks so your app will run
-        any devices.
+        Im using cross platform technologies like react-native so your app run
+        both android and ios.
       </p>
       <p></p>
-      <Image src={CoverImage} />
+      <Image alt="sample" src={CoverImage} />
     </div>
   );
 };

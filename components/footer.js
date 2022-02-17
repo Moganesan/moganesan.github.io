@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="flex flex-col items-center p-16 relative bg-purple">
-      <Image src={Logo} />
+      <Image alt="logo" src={Logo} />
       <h3 className="font-Varela-Round text-white opacity-60 mt-6 text-lg">
         Grind , Create & Achieve.
       </h3>
@@ -67,7 +67,7 @@ const Footer = () => {
 const StartProject = () => {
   return (
     <div className="absolute bottom-96">
-      <Link href="/contact">
+      <Link passHref href="/contact">
         <button className="bg-navy text-white shadow-2xl rounded-3xl font-bold w-44  p-4">
           Start Your Project
         </button>

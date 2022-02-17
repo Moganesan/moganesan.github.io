@@ -30,25 +30,25 @@ const Projects = () => {
               Recent Work
             </h2>
             <div className="w-52 smb:w-40 sm:w-52 smb:mt-3 sm:mt-6">
-              <Image src={NanbanLogo} />
+              <Image alt="nanban" src={NanbanLogo} />
             </div>
             <p className="w-full text-2xl sm:mt-11">
               A social media platform for schools and college students.
             </p>
             <div className="flex smb:mt-5 sm:mt-10 items-center">
               <div className="w-16">
-                <Image width={100} src={ReactLogo} />
+                <Image alt="react" width={100} src={ReactLogo} />
               </div>
               <div className="w-16 ml-5">
-                <Image width={100} src={ReduxLogo} />
+                <Image alt="redux" width={100} src={ReduxLogo} />
               </div>
               <div className="w-16 ml-5">
-                <Image width={100} src={FirebaseLogo} />
+                <Image alt="firebase" width={100} src={FirebaseLogo} />
               </div>
             </div>
           </div>
           <div className="smb:mt-5">
-            <Image src={NanbanScreen} />
+            <Image alt="nanban-screen" src={NanbanScreen} />
           </div>
         </div>
       </SplideSlide>
@@ -59,24 +59,25 @@ const Projects = () => {
               Recent Work
             </h2>
             <div className="w-52 smb:w-40 sm:w-52 smb:mt-3 sm:mt-6">
-              <Image src={KlvinLogo} />
+              <Image alt="klvien" src={KlvinLogo} />
             </div>
             <p className="w-full text-2xl sm:mt-11">
               Complete School and College Mangement System.
             </p>
             <div className="flex smb:mt-5 sm:mt-10 items-center">
               <div className="w-16">
-                <Image width={100} src={ReactLogo} />
+                <Image alt="react" width={100} src={ReactLogo} />
               </div>
               <div className="w-16 ml-5">
-                <Image width={100} src={ReduxLogo} />
+                <Image alt="redux" width={100} src={ReduxLogo} />
               </div>
               <div className="w-16 ml-5">
-                <Image width={100} src={FirebaseLogo} />
+                <Image alt="firebase" width={100} src={FirebaseLogo} />
               </div>
             </div>
             <div className="mt-5">
               <a
+                rel="noreferrer"
                 href="https://klvien.vercel.app/"
                 target="_blank"
                 className="border-2 p-2 rounded-xl border-purple hover:bg-purple hover:text-white duration-500 bg-white font-bold text-sm text-purple cursor-pointer"
@@ -86,7 +87,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="smb:mt-10">
-            <Image src={KlvienImage} />
+            <Image alt="klvien" src={KlvienImage} />
           </div>
         </div>
       </SplideSlide>
