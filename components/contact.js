@@ -11,13 +11,19 @@ const Contact = () => {
         </div>
         <div className="flex  items-center flex-col">
           <label className="text-grey2 font-bold text-2xl">Email</label>
-          <input className="w-full dark:bg-black2 dark:border-black dark:focus:border-purple bg-white mt-5 border-grey border-2 focus:border-purple focus:bg-grey outline-none p-5 font-bold rounded-md" />
+          <input
+            type={"email"}
+            className="w-full dark:bg-black2 dark:border-black dark:focus:border-purple bg-white mt-5 border-grey border-2 focus:border-purple focus:bg-grey outline-none p-5 font-bold rounded-md"
+          />
         </div>
         <div className="flex  items-center flex-col">
           <label className="text-grey2 font-bold text-2xl">
             Contact Number
           </label>
-          <input className="w-full dark:bg-black2 dark:border-black dark:focus:border-purple bg-white mt-5 border-grey border-2 focus:border-purple focus:bg-grey outline-none p-5 font-bold rounded-md" />
+          <input
+            type="tel"
+            className="w-full dark:bg-black2 dark:border-black dark:focus:border-purple bg-white mt-5 border-grey border-2 focus:border-purple focus:bg-grey outline-none p-5 font-bold rounded-md"
+          />
         </div>
         <div className="flex  items-center flex-col">
           <label className="text-grey2 font-bold text-2xl">

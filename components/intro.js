@@ -9,9 +9,8 @@ const Intro = () => {
   return (
     <div className="flex flex-col items-center justify-center md:p-10 p-24 text-white bg-purple smb:py-10 smb:p-4">
       <p className="w-2/3 text-2xl text-center smb:text-xl smb:w-full sm:w-2/3 md:w-1/2">
-        My name is Moganesan im a full-stack developer, i worked varius tech
-        projects. and know how to build complex applications with suitable
-        technologies
+        My name is Moganesan im a full-stack developer, i worked various tech
+        projects.I know how to build complex web & mobile applications.
       </p>
       <div className="grid smb:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 text-center smb:m-10 mt-20">
         <div className="container bg-white p-10 rounded-lg shadow-2xl duration-200 hover:scale-105">
@@ -19,8 +18,7 @@ const Intro = () => {
           <h1 className="text-black font-bold text-3xl mt-5">Designer</h1>
           <p className="text-black mt-10">
             My goal is to create attractive web and mobile designs with the help
-            of latest tricks and tools and also I create user frinedly UI
-            Elements
+            of latest tricks and tools and I create user frinedly UI Elements.
           </p>
           <p className="text-purple mt-5 font-bold">Files i worked with:</p>
           <ul className="text-black mt-2">
@@ -51,7 +49,7 @@ const Intro = () => {
             <li>JavaScript</li>
             <li>Python</li>
           </ul>
-          <p className="text-purple mt-2 font-bold">Tools&Technologies:</p>
+          <p className="text-purple mt-5 font-bold">Tools&Technologies:</p>
           <ul className="text-black mt-2">
             <li>React/Native</li>
             <li>Nodejs/Express</li>

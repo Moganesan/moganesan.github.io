@@ -16,7 +16,7 @@ const Technologies = () => {
   return (
     <div className="sm:p-16 smb:p-5 smb:py-16 dark:bg-darkBackground2 bg-white">
       <h2 className="text-center text-3xl smb:w-full text-black font-bold mb-10 dark:text-white">
-        Technologies i work with🪛
+        Tools & Technologies🪛
       </h2>
       <div className="grid smb:grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10 justify-center justify-items-center justify-self-center content-center items-center">
         <div className="hover:animate-pulse">

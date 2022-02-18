@@ -11,7 +11,7 @@ const Hero = () => {
       </h3>
       <h5 className="font-Varela-Round w-2/3 text-center text-xl sm:text-xl md:text-xl dark:text-grey mt-7 smb:text-lg">
         Love computers & programming.<br></br> I develope high quality
-        applications with excellent technologies
+        applications with help of excellent technologies.
       </h5>
       <div className={`mt-20 w-60 h-60 overflow-hidden rounded-full anime`}>
         <Image alt="profile" src={Profile} />
