@@ -2,17 +2,19 @@ import Profile from "../public/profile.jpg";
 import Image from "next/image";
 import QuoteLeft from "../public/icons/quoteLeft.svg";
 import QuoteRight from "../public/icons/quoteRight.svg";
-
+import TypingAnimation from "./typeWrite";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center smb:p-10 md:p-20 sm:p-14 dark:bg-darkBackground2 text-black2 dark:text-white2  p-28">
-      <h3 className="font-Russo-One md:text-5xl sm:text-3xl text-center smb:text-3xl">
-        Developer,Designer & Content Creator🔥
-      </h3>
-      <h5 className="font-Varela-Round w-2/3 text-center text-xl sm:text-xl md:text-xl dark:text-grey mt-7 smb:text-lg">
-        Love computers & programming.<br></br> I develope high quality
-        applications with help of excellent technologies.
-      </h5>
+      <span className="flex mb-4 items-center justify-center font-Russo-One md:text-3xl sm:text-xl smb:text-xl text-text1">
+        {"<h2>"}
+        <h3 className="font-Russo-One md:text-3xl text-green sm:text-xl text-center smb:text-xl">
+          I'm excited to do,
+        </h3>
+        {"</h2>"}
+      </span>
+
+      <TypingAnimation />
       <div className={`mt-20 w-60 h-60 overflow-hidden rounded-full anime`}>
         <Image alt="profile" src={Profile} />
       </div>
@@ -21,11 +23,19 @@ const Hero = () => {
           <div className="opacity-40 absolute bottom-1">
             <Image alt="quote" width={60} height={60} src={QuoteLeft} />
           </div>
-          <p className="font-bold text-2xl">
-            The Master has failed more times than the beginner has tried.
-          </p>
+          <span className="flex mb-4 items-center justify-center font-Russo-One text-2xl text-text1">
+            {"<quote>"}
+            <p className="font-bold text-2xl text-green">
+              The Master has failed more times than the beginner has tried.
+            </p>
+            {"</quote>"}
+          </span>
         </div>
-        <p className="text-right text-xl mr-10 mt-5">-Stephen McCranie</p>
+        <span className="mb-4 flex items-center justify-end font-Russo-One text-xl text-text1">
+          {"<author>"}
+          <p className="text-xl text-green">-Stephen McCranie</p>
+          {"<author>"}
+        </span>
       </div>
     </div>
   );
