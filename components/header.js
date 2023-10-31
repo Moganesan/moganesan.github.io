@@ -26,38 +26,32 @@ const Header = () => {
       name: "Home",
       id: "home-menu",
       route: "/",
-      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
-        router.pathname == "/" ? "border-greenBorder" : "border-transparent"
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-green hover:bg-green w-32 flex items-center justify-center"} ${
+        router.pathname == "/" ? "border-green" : "border-transparent"
       }`,
     },
     {
       name: "About",
       route: "/about",
       id: "about-menu",
-      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
-        router.pathname == "/about"
-          ? "border-greenBorder"
-          : "border-transparent"
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-green hover:bg-green w-32 flex items-center justify-center"} ${
+        router.pathname == "/about" ? "border-green" : "border-transparent"
       }`,
     },
     {
       name: "Work",
       route: "/work",
       id: "work-menu",
-      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
-        router.pathname == "/about"
-          ? "border-greenBorder"
-          : "border-transparent"
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-green hover:bg-green w-32 flex items-center justify-center"} ${
+        router.pathname == "/work" ? "border-green" : "border-transparent"
       }`,
     },
     {
       name: "Contact",
       route: "/contact",
       id: "contact-menu",
-      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
-        router.pathname == "/about"
-          ? "border-greenBorder"
-          : "border-transparent"
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-green hover:bg-green w-32 flex items-center justify-center"} ${
+        router.pathname == "/contact" ? "border-green" : "border-transparent"
       }`,
     },
   ];
@@ -197,17 +191,6 @@ const Header = () => {
                 />
               )}
             </a>
-          </li>
-          <li className="flex items-center">
-            <button
-              onClick={() => setTheme(theme == "light" ? "dark" : "light")}
-            >
-              {theme == "light" ? (
-                <Image alt="dark" width={40} height={40} src={MoonLogo} />
-              ) : (
-                <Image alt="light" width={40} height={40} src={SunLogo} />
-              )}
-            </button>
           </li>
         </ul>
       </div>
