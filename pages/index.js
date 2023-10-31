@@ -14,6 +14,7 @@ export default function Home() {
         <title>Moganesan - Developer, Designed & Content Creator.</title>
       </Head>
       <Hero />
+      <hr className="h-1 bg-green" />
       <Intro />
       <Technologies />
       <Platforms />

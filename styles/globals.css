@@ -38,19 +38,19 @@ a {
 
 @keyframes breathe {
   0% {
-    box-shadow: 0 0 0 15px rgba(211, 153, 250, 0.3),
-      0 0 0 10px rgba(211, 153, 250, 0.3), 0 0 0 15px rgba(211, 153, 250, 0.3),
-      0 0 0 10px rgba(211, 153, 250, 0.3), 0 0 0 15px rgba(211, 153, 250, 0.3);
+    box-shadow: 0 0 0 15px rgba(153, 250, 206, 0.3),
+      0 0 0 10px rgba(153, 250, 206, 0.3), 0 0 0 15px rgba(153, 250, 206, 0.3),
+      0 0 0 10px rgba(153, 250, 206, 0.3), 0 0 0 15px rgba(153, 250, 206, 0.3);
   }
   50% {
-    box-shadow: 0 0 0 25px rgba(211, 153, 250, 0.3),
-      0 0 0 5px rgba(211, 153, 250, 0.3), 0 0 0 10px rgba(211, 153, 250, 0.3),
-      0 0 0 5px rgba(211, 153, 250, 0.3), 0 0 0 10px rgba(211, 153, 250, 0.3);
+    box-shadow: 0 0 0 25px rgba(153, 250, 206, 0.3),
+      0 0 0 5px rgba(153, 250, 206, 0.3), 0 0 0 10px rgba(153, 250, 206, 0.3),
+      0 0 0 5px rgba(153, 250, 206, 0.3), 0 0 0 10px rgba(153, 250, 206, 0.3);
   }
   100% {
-    box-shadow: 0 0 0 15px rgba(211, 153, 250, 0.3),
-      0 0 0 20px rgba(211, 153, 250, 0.3), 0 0 0 10px rgba(211, 153, 250, 0.3),
-      0 0 0 20px rgba(211, 153, 250, 0.3), 0 0 0 10px rgba(211, 153, 250, 0.3);
+    box-shadow: 0 0 0 15px rgba(153, 250, 206, 0.3),
+      0 0 0 20px rgba(153, 250, 206, 0.3), 0 0 0 10px rgba(153, 250, 206, 0.3),
+      0 0 0 20px rgba(153, 250, 206, 0.3), 0 0 0 10px rgba(153, 250, 206, 0.3);
   }
 }
 
@@ -95,4 +95,28 @@ a {
 
 .Icon:hover {
   fill: #8a39e1;
+}
+.typewrite {
+  color: #e6e7e8;
+  font-size: 24px;
+}
+
+.typewrite::after {
+  content: "|"; /* Cursor symbol */
+  display: inline-block;
+  width: 0;
+  margin-left: 0.1em; /* Adjust cursor position */
+  animation: cursor 0.7s infinite; /* Cursor animation */
+}
+
+@keyframes cursor {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0.1em; /* Adjust cursor width */
+  }
+  100% {
+    width: 0;
+  }
 }

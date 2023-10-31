@@ -7,17 +7,19 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    defaultTheme: "dark",
     screens: {
       smb: "320px",
       ...defaultTheme.screens,
     },
     colors: {
-      white: "#FFFFFF",
+      primary: "#000000",
+      white: "#e6e7e8",
       white2: "#FAEDF0",
       grey: "#F6F6F6",
       grey2: "#686d76",
       grey3: "#F5F5F5",
-      darkBackground1: "#161B22",
+      darkBackground1: "#111119",
       darkBackground2: "#0D1117",
       black: "#121212",
       black2: "#19282F",
@@ -26,6 +28,8 @@ module.exports = {
       purple: "#7900FF",
       navy: "#141C3A",
       purpleLight: "#e0faff",
+      green: "#01FF94",
+      text1: "#61677A",
     },
     extend: {
       fontFamily: {
