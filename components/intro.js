@@ -3,82 +3,128 @@ import Image from "next/image";
 import BrushIcon from "../public/icons/brush.svg";
 import CodeIcon from "../public/icons/code.svg";
 import YoutubeIcon from "../public/icons/youtube.svg";
+import BlockchainIcon from "../public/icons/Blockchain.svg";
+import DroneIcon from "../public/icons/drone.svg";
 import Hero from "../components/heroContainer";
 
 const Intro = () => {
   return (
-    <div className="flex flex-col items-center justify-center md:p-10 p-24 text-white bg-purple smb:py-10 smb:p-4">
-      <p className="w-2/3 text-2xl text-center smb:text-xl smb:w-full sm:w-2/3 md:w-1/2">
-        My name is Moganesan im a full-stack developer, i worked various tech
-        projects.I know how to build complex web & mobile applications.
-      </p>
+    <div className="flex flex-col items-center justify-center md:p-10 p-24 text-white bg-darkBackground2 smb:py-10 smb:p-4">
+      <span className="w-2/3 text-2xl text-center smb:text-xl smb:w-full sm:w-2/3 md:w-1/2 text-text1">
+        {"<p>"}
+        <p className="text-white">
+          My name is Moganesan, and I'm a full-stack developer with experience
+          in various tech projects. I'm passionate about what I do and eager to
+          build somethin new.
+        </p>
+        {"</p>"}
+      </span>
       <div className="grid smb:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 text-center smb:m-10 mt-20">
-        <div className="container bg-white p-10 rounded-lg shadow-2xl duration-200 hover:scale-105">
-          <Image alt="designer" src={BrushIcon} />
-          <h1 className="text-black font-bold text-3xl mt-5">Designer</h1>
-          <p className="text-black mt-10">
-            My goal is to create attractive web and mobile designs with the help
-            of latest tricks and tools and I create user frinedly UI Elements.
-          </p>
-          <p className="text-purple mt-5 font-bold">Files i worked with:</p>
-          <ul className="text-black mt-2">
-            <li>Svg</li>
-            <li>Png</li>
-            <li>Jpeg</li>
-            <li>Giff</li>
-          </ul>
-          <p className="text-purple mt-5 font-bold">Tools & Technologies:</p>
-          <ul className="text-black mt-2">
-            <li>Adobe Illustrator</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe XD</li>
-            <li>Figma</li>
-          </ul>
+        <div className="grid place-items-center border-2 border-green">
+          <div className="container items-center flex flex-col  p-10 shadow-2xl duration-200 hover:scale-105">
+            <Image alt="designer" src={BrushIcon} />
+            <span className="text-text1 font-bold text-xl flex items-center justify-center mt-4">
+              {"<h1>"}
+              <h1 className="text-white text-2xl">Web Developer</h1>
+              {"</h1>"}
+            </span>
+            <span className="text-text1 mt-5">
+              {"<p>"}
+              <p className="text-grey">
+                I'm a web development enthusiast with a broad skill set
+                encompassing both frontend and backend technologies. On the
+                frontend, I excel in building captivating and user-friendly
+                websites, harnessing the power of Next.js, Tailwind CSS,
+                React-Query, and TypeScript to deliver top-notch experiences.
+                For backend development, I'm well-versed in Node.js, MySQL,
+                Firebase, and JWT, ensuring robust server-side functionality,
+                data management, and authentication. My passion for web
+                development extends to staying updated with the latest industry
+                trends and continuously expanding my skill set to offer
+                innovative solutions, all with the goal of creating exceptional
+                web experiences.
+              </p>
+              {"</p>"}
+            </span>
+          </div>
         </div>
-        <div className="container smb:scale-100 smb:hover:scale-105 md:hover:scale-105 bg-white p-10 rounded-lg shadow-2xl scale-110  duration-200 hover:scale-125">
-          <Image alt="developer" src={CodeIcon} />
-          <h1 className="text-black font-bold text-3xl mt-5">Developer</h1>
-          <p className="text-black mt-10">
-            I can develope any kind of web and mobile applications with trending
-            technologies.
-          </p>
-          <p className="text-purple mt-5 font-bold">Programming Languages:</p>
-          <ul className="text-black mt-2">
-            <li>C</li>
-            <li>C++</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-          </ul>
-          <p className="text-purple mt-5 font-bold">Tools&Technologies:</p>
-          <ul className="text-black mt-2">
-            <li>React/Native</li>
-            <li>Nodejs/Express</li>
-            <li>Firebase</li>
-            <li>Nextjs</li>
-            <li>Redux</li>
-          </ul>
+
+        <div className="grid place-items-center border-2 border-green">
+          <div className="container items-center flex flex-col  p-10 shadow-2xl duration-200 hover:scale-105">
+            <Image alt="designer" src={BlockchainIcon} />
+            <span className="text-text1 font-bold text-xl flex items-center justify-center mt-4">
+              {"<h1>"}
+              <h1 className="text-white text-2xl">Blockchain Developer</h1>
+              {"</h1>"}
+            </span>
+            <span className="text-text1 mt-5">
+              {"<p>"}
+              <p className="text-grey">
+                With one year of dedicated blockchain development experience,
+                I've honed my skills in various facets of the blockchain
+                ecosystem. This includes EVM-based smart contract development,
+                overseeing the entire blockchain development lifecycle using
+                tools like Hardhat and Remix, and writing contracts for ERC-20
+                tokens. I've also seamlessly integrated these smart contracts
+                into user-friendly frontend applications using Ethers.js and
+                MetaMask. My work has extended to customer support, where I've
+                actively collected and implemented user feedback, enhancing the
+                usability and functionality of web3 applications. My most
+                notable achievement is my involvement in a real-world
+                decentralized application,
+                <a
+                  href="https://auroratipbot.xyz/"
+                  target="_blank"
+                  className="text-green"
+                >
+                  "Aurora Tip Bot",
+                </a>
+                where I've put my skills into action, solidifying my expertise
+                in the blockchain space.
+              </p>
+              {"</p>"}
+            </span>
+          </div>
         </div>
-        <div className="container bg-white p-10 rounded-lg shadow-2xl  duration-200 hover:scale-105">
-          <Image alt="content-creator" src={YoutubeIcon} />
-          <h1 className="text-black font-bold text-3xl mt-5">
-            Content Creator
-          </h1>
-          <p className="text-black mt-10">
-            I started my youtube channel at Apr 8,2017, I love to do tech &
-            programming videos on youtube, currently i have 1300 SUBSCRIBERS.
-          </p>
-          <p className="text-purple mt-10 font-bold">Subscriber:</p>
-          <ul className="text-black mt-2">
-            <li>1300</li>
-          </ul>
-          <p className="text-purple mt-5 font-bold">Viewers:</p>
-          <ul className="text-black mt-2">
-            <li>1,75,000</li>
-          </ul>
-          <p className="text-purple mt-5 font-bold">Courses:</p>
-          <ul className="text-black mt-2">
-            <li>Complete JavaScript Mastery, 8 hours Course</li>
-          </ul>
+        <div className="grid place-items-center border-2 border-green">
+          <div className="container items-center flex flex-col  p-10 shadow-2xl duration-200 hover:scale-105">
+            <Image alt="designer" src={DroneIcon} />
+            <span className="text-text1 font-bold text-xl flex items-center justify-center mt-4">
+              {"<h1>"}
+              <h1 className="text-white text-2xl">Electronics Enthusiast</h1>
+              {"</h1>"}
+            </span>
+            <span className="text-text1 mt-5">
+              {"<p>"}
+              <p className="text-grey">
+                I have a deep-rooted love for tinkering with hardware and
+                electronics. Whether it's building drones, hacking gadgets, or
+                creating IoT devices, I find joy in bringing my ideas to life.
+                My curiosity and problem-solving skills drive me to explore the
+                endless possibilities of technology. My portfolio showcases my
+                journey in the world of hardware, where I turn concepts into
+                tangible solutions, fueling my passion for innovation and
+                creativity.
+              </p>
+              {"</p>"}
+              <br />
+              <span className="flex mt-3 mb-3 items-center justify-center">
+                {"<h1>"}
+                <h1 className="text-green">Fav Hardwares</h1>
+                {"</h1>"}
+              </span>
+              <span className="mt-4">
+                {"<ul>"}
+                <ul className="text-green">
+                  <li>Arduino</li>
+                  <li>NodeMCU</li>
+                  <li>STM 32 Microcontroller</li>
+                  <li>Rashberry Pi</li>
+                </ul>
+                {"</ul>"}
+              </span>
+            </span>
+          </div>
         </div>
       </div>
     </div>
