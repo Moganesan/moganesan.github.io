@@ -26,55 +26,45 @@ const Header = () => {
       name: "Home",
       id: "home-menu",
       route: "/",
-      class: `${"duration-500 p-2 border-2 border-transparent border-solid rounded-md cursor-pointer font-bold hover:text-white hover:bg-purple"} ${
-        router.pathname == "/"
-          ? theme == "light"
-            ? "active"
-            : "active-dark"
-          : ""
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
+        router.pathname == "/" ? "border-greenBorder" : "border-transparent"
       }`,
     },
     {
       name: "About",
       route: "/about",
       id: "about-menu",
-      class: `${"duration-500 p-2 border-2 border-transparent border-solid rounded-md cursor-pointer font-bold hover:text-white hover:bg-purple"} ${
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
         router.pathname == "/about"
-          ? theme == "light"
-            ? "active"
-            : "active-dark"
-          : ""
+          ? "border-greenBorder"
+          : "border-transparent"
       }`,
     },
     {
       name: "Work",
       route: "/work",
       id: "work-menu",
-      class: `${"duration-500 p-2 border-2 border-transparent border-solid rounded-md cursor-pointer font-bold hover:text-white hover:bg-purple"} ${
-        router.pathname == "/work"
-          ? theme == "light"
-            ? "active"
-            : "active-dark"
-          : ""
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
+        router.pathname == "/about"
+          ? "border-greenBorder"
+          : "border-transparent"
       }`,
     },
     {
       name: "Contact",
       route: "/contact",
       id: "contact-menu",
-      class: `${"duration-500 p-2 border-2 border-transparent border-solid rounded-md cursor-pointer font-bold hover:text-white hover:bg-purple border-purple"} ${
-        router.pathname == "/contact"
-          ? theme == "light"
-            ? "active"
-            : "active-dark"
-          : ""
+      class: `${"duration-500 p-2 border-2  border-solid  cursor-pointer font-bold hover:text-white text-greenBorder hover:bg-greenBorder"} ${
+        router.pathname == "/about"
+          ? "border-greenBorder"
+          : "border-transparent"
       }`,
     },
   ];
 
   return (
     <>
-      <div className="dark:bg-darkBackground1 dark:border-black text-grey2 dark:text-white w-full h-20 bg-white border-b-2 border-grey flex items-center smb:px-5 sm:px-14 font-Nunito">
+      <div className="dark:bg-darkBackground1 dark:border-black text-grey2 dark:text-white w-full h-20 bg-white border-b-2 flex items-center smb:px-5 sm:px-14 font-Nunito">
         <div className="flex flex-1">
           <Link passHref href="/">
             <Image className="cursor-pointer" alt="logo" src={Logo} />
