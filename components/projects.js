@@ -2,6 +2,7 @@ import HorizontalScroll from "react-scroll-horizontal";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ForwardIcon, BackwardIcon } from "@heroicons/react/24/outline";
+import AuroraTipBotLogo from "../public/projectLogos/auroratipbot.svg";
 
 const Projects = () => {
   const [projects, setProject] = useState([
@@ -74,15 +75,43 @@ const Projects = () => {
     console.log("Selected Product", projects[selectedProject]);
   }, []);
   return (
-    <div className="mt-20 px-44">
+    <div className="mt-20 px-44 mb-10">
       <span className="text-text1 text-4xl font-bold flex items-center justify-center">
         {"<h1>"}
-        <h1 className="text-4xl text-grey font-bold">Projects</h1>
+        <h1 className="text-4xl font-Russo-One text-grey font-bold">
+          Projects
+        </h1>
         {"</h1>"}
       </span>
-      <div className="flex items-center justify-between mt-9">
-        <div className="flex-grow w-1/2">
-          <Image src={"/about.jpeg"} width={300} height={300} />
+      <div className="flex justify-between mt-9">
+        <div className="flex-grow w-1/2 mt-20">
+          <svg
+            width="654"
+            height="456"
+            viewBox="0 0 654 456"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.9389 33.7887L51.8777 0L153.933 1.06832e-06V9.09978H237.918V18.7051H619.131L654 100.098V389.01C654 389.01 632.749 409.424 619.131 422.505C605.515 435.586 584.262 456 584.262 456H429.055V422.505H310.629H192.203V456H0V67.5773L25.9389 33.7887Z"
+              fill="#01FF94"
+              fill-opacity="0.05"
+              stroke="#01FF94"
+            />
+            <foreignObject x="10" y="10" width="100%" height="100%">
+              <div
+                xmlns="http://www.w3.org/1999/xhtml"
+                className="px-10 py-10 h-full w-full flex items-center justify-center"
+              >
+                <Image
+                  src={AuroraTipBotLogo}
+                  width={400}
+                  height={153}
+                  alt="auroratipbot"
+                />
+              </div>
+            </foreignObject>
+          </svg>
         </div>
         <div className="flex-grow w-1/2 max-w-1/2 p-4">
           <h1 className="font-Russo-One text-md">
