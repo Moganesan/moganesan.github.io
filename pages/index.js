@@ -9,7 +9,7 @@ import Contact from "../components/contact";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-darkBackground1 text-white">
       <Head>
         <title>Moganesan - Developer, Designed & Content Creator.</title>
       </Head>
@@ -17,7 +17,7 @@ export default function Home() {
       <hr className="h-1 bg-green" />
       <Intro />
       <Technologies />
-      <Platforms />
+      <hr className="h-1 bg-green" />
       <Projects />
       <Contact />
     </div>
