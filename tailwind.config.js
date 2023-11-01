@@ -29,6 +29,8 @@ module.exports = {
       navy: "#141C3A",
       purpleLight: "#e0faff",
       green: "#01FF94",
+      greenBackground: "rgba(1, 255, 148, 0.05)",
+      greenBackground2: "rgba(1, 255, 148, 0.1)",
       text1: "#61677A",
     },
     extend: {
