@@ -19,8 +19,8 @@ const Intro = () => {
         </p>
         {"</p>"}
       </span>
-      <div className="grid smb:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 text-center smb:m-10 mt-20">
-        <div className="grid place-items-center border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500">
+      <div className="grid w-full smb:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 text-center smb:m-10 mt-20">
+        <div className="grid w-full place-items-center border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500">
           <div className="container items-center flex flex-col  p-10">
             <Image alt="designer" src={BrushIcon} />
             <span className="text-text1 font-bold text-xl flex items-center justify-center mt-4">

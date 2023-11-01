@@ -79,7 +79,7 @@ const Header = () => {
         isSticky ? "top-0" : ""
       }`}
     >
-      <div className="flex flex-1">
+      <div className="flex flex-1 smb:hidden md:flex">
         <Link passHref href="/">
           <Image className="cursor-pointer" alt="logo" src={Logo} />
         </Link>
@@ -134,48 +134,7 @@ const Header = () => {
         </Modal>
       ) : null}
 
-      <ul className="smb:flex flex-auto justify-around sm:hidden">
-        <li className="flex items-center">
-          <a
-            target={"_blank"}
-            rel="noreferrer"
-            href="https://github.com/Moganesan/"
-          >
-            {theme == "light" ? (
-              <Image alt="github" width={35} height={35} src={GithubLogo} />
-            ) : (
-              <Image
-                alt="github"
-                width={35}
-                height={35}
-                src={GithubLogoWhite}
-              />
-            )}
-          </a>
-        </li>
-        <li className="flex items-center">
-          <button onClick={() => setTheme(theme == "light" ? "dark" : "light")}>
-            {theme == "light" ? (
-              <Image alt="dark" width={35} height={35} src={MoonLogo} />
-            ) : (
-              <Image alt="light" width={35} height={35} src={SunLogo} />
-            )}
-          </button>
-        </li>
-        <li className="flex items-center">
-          {theme == "light" ? (
-            <button onClick={() => setMobileMenu(!mobileMenu)}>
-              <Image alt="menu" src={Menu} />
-            </button>
-          ) : (
-            <button onClick={() => setMobileMenu(!mobileMenu)}>
-              <Image alt="menu" src={MenuWhite} />
-            </button>
-          )}
-        </li>
-      </ul>
-
-      <ul className="flex flex-auto smb:hidden sm:flex justify-between">
+      <ul className="flex flex-auto sm:flex justify-between">
         {menus.map((menu) => (
           <li
             onClick={() => scrollToSection(menu.route)}

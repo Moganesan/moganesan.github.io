@@ -75,7 +75,7 @@ const Projects = () => {
     console.log("Selected Product", projects[selectedProject]);
   }, []);
   return (
-    <div className="mt-20 px-44 mb-10">
+    <div className="mt-20 md:px-44 smb:px-2 mb-10">
       <span className="text-text1 text-4xl font-bold flex items-center justify-center">
         {"<h1>"}
         <h1 className="text-4xl font-Russo-One text-grey font-bold">
@@ -83,17 +83,17 @@ const Projects = () => {
         </h1>
         {"</h1>"}
       </span>
-      <div className="flex justify-between mt-9">
-        <div className="flex-grow w-1/2 mt-20">
+      <div className="flex smb:flex-col md:flex-row smb:items-center md:items-start justify-between mt-9">
+        <div className="flex-grow sm:w-96 md:w-1/2 md:mt-20">
           <svg
-            width="654"
-            height="456"
-            viewBox="0 0 654 456"
+            width="462"
+            height="322"
+            viewBox="0 0 462 322"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M25.9389 33.7887L51.8777 0L153.933 1.06832e-06V9.09978H237.918V18.7051H619.131L654 100.098V389.01C654 389.01 632.749 409.424 619.131 422.505C605.515 435.586 584.262 456 584.262 456H429.055V422.505H310.629H192.203V456H0V67.5773L25.9389 33.7887Z"
+              d="M412.56 321.475L412.534 321.5H303.594V298.348V297.848H303.094H219.435H135.776H135.276V298.348V321.5H0.5V47.8889L18.7204 24.1641L36.894 0.5L108.242 0.500001V6.42572V6.92572H108.742H167.571V13.2084V13.7084H168.071H437.038L461.5 70.7858V274.483L461.483 274.499L460.99 274.972L459.158 276.732L452.945 282.697L437.021 297.987C432.212 302.606 426.054 308.519 421.098 313.277L414.885 319.243L413.053 321.002L412.56 321.475Z"
               fill="#01FF94"
               fill-opacity="0.05"
               stroke="#01FF94"
@@ -105,15 +105,15 @@ const Projects = () => {
               >
                 <Image
                   src={AuroraTipBotLogo}
-                  width={400}
-                  height={153}
+                  width={350}
+                  height={150}
                   alt="auroratipbot"
                 />
               </div>
             </foreignObject>
           </svg>
         </div>
-        <div className="flex-grow w-1/2 max-w-1/2 p-4">
+        <div className="flex-grow smb:mt-10 smb:w-full md:w-1/2 max-w-1/2 p-4">
           <h1 className="font-Russo-One text-md">
             {projects[selectedProject]?.category}
           </h1>
@@ -122,7 +122,7 @@ const Projects = () => {
           </h2>
           {projects[selectedProject]?.description}
 
-          <div className="grid grid-flow-row gap-10 mt-10 grid-cols-4">
+          <div className="grid grid-flow-row gap-10 mt-10 smb:grid-cols-2 md:grid-cols-4">
             {projects[selectedProject]?.tags.map((tag) => {
               return (
                 <div>
