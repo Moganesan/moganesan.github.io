@@ -19,6 +19,7 @@ export default function Home() {
       <Technologies />
       <hr className="h-1 bg-green" />
       <Projects />
+      <hr className="h-1 bg-green" />
       <Contact />
     </div>
   );

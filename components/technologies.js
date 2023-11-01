@@ -25,7 +25,7 @@ const Technologies = () => {
     <div className="sm:p-16 smb:p-5 smb:py-16 dark:bg-darkBackground2 bg-white">
       <div className="flex items-center justify-center mb-10 md:mb-20">
         <div className="w-fit">
-          <span className="text-text1 text-4xl font-bold flex items-center justify-center">
+          <span className="text-text1 font-Russo-One text-4xl font-bold flex items-center justify-center">
             {"<h1>"}
             <h2 className="text-4xl smb:w-full text-grey font-bold">
               Tools Box

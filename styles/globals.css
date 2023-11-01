@@ -86,7 +86,7 @@ a {
 }
 
 .IconContainer:hover .Icon {
-  fill: #8a39e1;
+  fill: #01ff94;
 }
 
 .Icon {
@@ -94,7 +94,7 @@ a {
 }
 
 .Icon:hover {
-  fill: #8a39e1;
+  fill: #01ff94;
 }
 .typewrite {
   color: #e6e7e8;
