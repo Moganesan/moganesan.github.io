@@ -5,6 +5,7 @@
 html,
 body {
   padding: 0;
+  background-color: black;
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Nunito";
@@ -120,4 +121,11 @@ a {
   100% {
     width: 0;
   }
+}
+
+.sticky {
+  position: sticky;
+  top: -1px; /* Adjust this value to your design preferences */
+  background-color: #000000aa;
+  padding: 10px 0;
 }
