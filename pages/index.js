@@ -13,14 +13,21 @@ export default function Home() {
       <Head>
         <title>Moganesan - Developer, Designed & Content Creator.</title>
       </Head>
-      <Hero />
+      <div id="home">
+        <Hero />
+        <hr className="h-1 bg-green" />
+        <Intro />
+        <Technologies />
+      </div>
       <hr className="h-1 bg-green" />
-      <Intro />
-      <Technologies />
+      <div id="projects">
+        <Projects />
+      </div>
+
       <hr className="h-1 bg-green" />
-      <Projects />
-      <hr className="h-1 bg-green" />
-      <Contact />
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 }
