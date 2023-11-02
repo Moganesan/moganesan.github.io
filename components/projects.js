@@ -10,41 +10,59 @@ const Projects = () => {
       name: "Aurora Tip Box",
       category: "Web Application",
       link: "www.auroratipbot.xyz",
-      image: "https://auroratipbot.xyz/botIcon.svg",
+      image: "./projectLogos/auroratipbot.svg",
       description: (
-        <p>
-          Summary: The primary objective of this project is to develop a
-          comprehensive system for tipping Aurora tokens to Telegram users. This
-          multifaceted project consists of three core components: Frontend,
-          Backend (Telegram Bot Server), and Smart Contract. 1. Frontend: The
-          frontend serves as the user interface for this system and plays a
-          crucial role in facilitating token transactions. Users are required to
-          connect their Metamask wallet to the website to get started. Once
-          connected, they can deposit Aurora tokens into the system. The website
-          is seamlessly integrated with the Aurora Tip Bot smart contract,
-          enabling users to initiate deposits. Initially, the balance is tracked
-          using the wallet address. After depositing tokens, users gain the
-          ability to tip specified amounts to Telegram users. 2. Backend
-          (Telegram Bot Server): The backend component is responsible for
-          managing the Aurora Telegram bot. To engage with the system, users
-          must first link their Metamask wallet to their Telegram account. This
-          is achieved by sending a &quot;/login walletaddress request to the
-          Aurora Community Tip Bot deployed within the Telegram environment. The
-          bot responds with a login URL upon successful connection. Once the
-          wallet address is linked to Telegram, users can utilize the
-          &quot;/balance&quot; command to check their token balance. To initiate
-          tips to other Telegram users, they can visit any public group and use
-          the &quot;/tip amount recipientusername&quot; command. The bot takes
-          care of the transaction, updating the balance within the contract.
-          Subsequently, recipients can withdraw their tipped tokens through the
-          frontend interface. In summary, this project&apos;s goal is to create
-          a seamless and user-friendly ecosystem for tipping Aurora tokens to
-          Telegram users. The Frontend, Backend, and Smart Contract components
-          work to enable users to connect their wallets, deposit tokens, and
-          effortlessly send tips to their fellow Telegram users, enhancing the
-          utility and accessibility of Aurora tokens within the Telegram
-          community.
-        </p>
+        <div>
+          <br />
+          <h1>Summary:</h1>
+          <br />
+          <p>
+            The primary objective of this project is to develop a comprehensive
+            system for tipping Aurora tokens to Telegram users. This
+            multifaceted project consists of three core components: Frontend,
+            Backend (Telegram Bot Server), and Smart Contract.
+          </p>
+          <br />
+          <h2>1. Frontend:</h2>
+          <br />
+          <p>
+            The frontend serves as the user interface for this system and plays
+            a crucial role in facilitating token transactions. Users are
+            required to connect their Metamask wallet to the website to get
+            started. Once connected, they can deposit Aurora tokens into the
+            system. The website is seamlessly integrated with the Aurora Tip Bot
+            smart contract, enabling users to initiate deposits. Initially, the
+            balance is tracked using the wallet address. After depositing
+            tokens, users gain the ability to tip specified amounts to Telegram
+            users.
+          </p>
+          <br />
+          <h2>2. Backend (Telegram Bot Server):</h2>
+          <br />
+          <p>
+            The backend component is responsible for managing the Aurora
+            Telegram bot. To engage with the system, users must first link their
+            Metamask wallet to their Telegram account. This is achieved by
+            sending a /login walletaddress request to the Aurora Community Tip
+            Bot deployed within the Telegram environment. The bot responds with
+            a login URL upon successful connection. Once the wallet address is
+            linked to Telegram, users can utilize the /balance command to check
+            their token balance. To initiate tips to other Telegram users, they
+            can visit any public group and use the /tip amount recipientusername
+            command. The bot takes care of the transaction, updating the balance
+            within the contract. Subsequently, recipients can withdraw their
+            tipped tokens through the frontend interface.
+          </p>
+          <br />
+          <p>
+            In summary, this projects goal is to create a seamless and
+            user-friendly ecosystem for tipping Aurora tokens to Telegram users.
+            The Frontend, Backend, and Smart Contract components work to enable
+            users to connect their wallets, deposit tokens, and effortlessly
+            send tips to their fellow Telegram users, enhancing the utility and
+            accessibility of Aurora tokens within the Telegram community.
+          </p>
+        </div>
       ),
       tags: [
         "Next.js",
@@ -55,6 +73,64 @@ const Projects = () => {
         "AWS",
         "Node.js",
         "Telegram API",
+      ],
+    },
+    {
+      id: 2,
+      name: "Klvien The Complete College Management Sytem",
+      category: "Web Application",
+      link: "https://github.com/Moganesan/klvien-college-management-system.git",
+      image: "./projectLogos/klvien.svg",
+      description: (
+        <div>
+          <br />
+          <h1>Summary:</h1>
+          <br />
+          <p>
+            Klvien is a complete college management software. i have started
+            this project when i was in my first year of college. inspired by the
+            application already used in my college management. klvien is aimed
+            to provide a attractive user interface with full set of
+            functionalities for managing the students exams, projects, online
+            classes and more and also it will allow management to manage
+            teachers activities.
+          </p>
+          <br />
+          <h2>1. Frontend:</h2>
+          <br />
+          <p>
+            The Frontend is build using react, redux, and styles-components i
+            have designed the ui/ux in figma and i used react for building the
+            frontend. klvien includes 3 frontend application. those are
+            students, staff, and management all are build using react.
+          </p>
+          <br />
+          <h2>2. Backend:</h2>
+          <br />
+          <p>
+            the backend is responsible for serving information to the student
+            application, staff application and management application. i have
+            used firebase as a database and used firebase-admin sdk with
+            nodes.js and the authentication system is build by using jwt and i
+            stored the keys in browser cookies.
+          </p>
+          <br />
+          <p>
+            it was a very excited project for me because at that time i aimed to
+            make it as a SaaS product for my college. and i woked very hard for
+            that. after 3 months of development this project got a good
+            impression.
+          </p>
+        </div>
+      ),
+      tags: [
+        "React.js",
+        "Redux",
+        "Styled-Components",
+        "Firebase",
+        "JWT",
+        "Vercel",
+        "Node.js",
       ],
     },
   ]);
@@ -101,7 +177,7 @@ const Projects = () => {
                 className="px-10 py-10 h-full w-full flex items-center justify-center"
               >
                 <Image
-                  src={"./projectLogos/auroratipbot.svg"}
+                  src={projects[selectedProject]?.image}
                   width={350}
                   height={150}
                   alt="auroratipbot"
