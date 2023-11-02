@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { ForwardIcon, BackwardIcon } from "@heroicons/react/24/outline";
 import AuroraTipBotLogo from "../public/projectLogos/auroratipbot.svg";
+import Link from "next/link";
 
 const Projects = () => {
   const [projects, setProject] = useState([
@@ -9,7 +10,7 @@ const Projects = () => {
       id: 1,
       name: "Aurora Tip Box",
       category: "Web Application",
-      link: "www.auroratipbot.xyz",
+      link: "https://auroratipbot.xyz/",
       image: "./projectLogos/auroratipbot.svg",
       description: (
         <div>
@@ -207,14 +208,14 @@ const Projects = () => {
             })}
           </div>
           <div className="mt-10">
-            <a
+            <Link
               rel="noreferrer"
-              href={projects[selectedProject].link}
+              href={projects[selectedProject].link.toString()}
               target="_blank"
               className="px-6 py-2 border border-green hover:bg-greenBackground2 duration-500"
             >
               View Project
-            </a>
+            </Link>
           </div>
           <div className="flex items-center mt-10">
             <div>
