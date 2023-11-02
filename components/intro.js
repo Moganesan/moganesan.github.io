@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
-import BrushIcon from "../public/icons/brush.svg";
-import CodeIcon from "../public/icons/code.svg";
-import YoutubeIcon from "../public/icons/youtube.svg";
-import BlockchainIcon from "../public/icons/blockchain.svg";
-import DroneIcon from "../public/icons/drone.svg";
-import Hero from "../components/heroContainer";
 
 const Intro = () => {
   return (
@@ -22,7 +16,12 @@ const Intro = () => {
       <div className="grid w-full smb:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 text-center smb:m-10 mt-20">
         <div className="grid w-full place-items-center border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500">
           <div className="container items-center flex flex-col  p-10">
-            <Image alt="designer" src={BrushIcon} />
+            <Image
+              alt="designer"
+              src={"/icons/brish.svg"}
+              width={100}
+              height={100}
+            />
             <span className="text-text1 font-bold text-xl flex items-center justify-center mt-4">
               {"<h1>"}
               <h1 className="text-white text-2xl">Web Developer</h1>
@@ -51,7 +50,12 @@ const Intro = () => {
 
         <div className="grid place-items-center border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500">
           <div className="container items-center flex flex-col  p-10">
-            <Image alt="designer" src={BlockchainIcon} />
+            <Image
+              alt="designer"
+              src={"/icons/blockchain.svg"}
+              width={100}
+              height={100}
+            />
             <span className="text-text1 font-bold text-xl flex items-center justify-center mt-4">
               {"<h1>"}
               <h1 className="text-white text-2xl">Blockchain Developer</h1>
@@ -89,7 +93,12 @@ const Intro = () => {
         </div>
         <div className="grid place-items-center border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500">
           <div className="container items-center flex flex-col  p-10">
-            <Image alt="designer" src={DroneIcon} />
+            <Image
+              alt="designer"
+              src={"/icons/drone.svg"}
+              width={100}
+              height={100}
+            />
             <span className="text-text1 font-bold text-xl flex items-center justify-center mt-4">
               {"<h1>"}
               <h1 className="text-white text-2xl">Electronics Enthusiast</h1>

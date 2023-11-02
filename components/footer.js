@@ -1,8 +1,5 @@
 import Logo from "../public/logo-white.svg";
 import Image from "next/image";
-import HeartIcon from "../public/icons/heart.svg";
-import ReactIcon from "../public/icons/react.svg";
-import NextIcon from "../public/icons/next.svg";
 import Link from "next/link";
 
 const Footer = () => {
@@ -10,7 +7,7 @@ const Footer = () => {
     <>
       <hr className="h-1 bg-green" />
       <div className="flex flex-col items-center p-16 relative bg-darkBackground2">
-        <Image alt="logo" src={Logo} />
+        <Image alt="logo" src={"/logo-white.svg"} width={50} height={50} />
         <h3 className="font-Varela-Round text-white opacity-60 mt-6 text-lg">
           Grind , Create & Achieve.
         </h3>
@@ -53,13 +50,29 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-white mt-7">
-          &copy;developed by <Image alt="heart-icon" src={HeartIcon} />{" "}
+          &copy;developed by{" "}
+          <Image
+            alt="heart-icon"
+            src={"/icons/heart.svg"}
+            width={10}
+            height={10}
+          />{" "}
           <span className="underline font-bold">Moganesan</span>
         </p>
         <div className="text-white opacity-50 flex w-40 mt-5 items-center justify-around">
           <span>Made with</span>
-          <Image alt="react-logo" src={ReactIcon} />
-          <Image alt="next-logo" src={NextIcon} />
+          <Image
+            alt="react-logo"
+            src={"/icons/react.svg"}
+            width={20}
+            height={20}
+          />
+          <Image
+            alt="next-logo"
+            src={"/icons/next.svg"}
+            width={20}
+            height={20}
+          />
         </div>
         <StartProject />
       </div>
@@ -69,7 +82,7 @@ const Footer = () => {
 
 const StartProject = () => {
   return (
-    <div className="absolute bottom-96 z-50">
+    <div style={{ bottom: 360 }} className="absolute z-50">
       <Link passHref href="/contact">
         <button className="bg-black2 border border-green text-white shadow-2xl rounded-3xl font-bold w-44  p-4">
           Start Your Project

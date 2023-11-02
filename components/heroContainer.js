@@ -1,6 +1,5 @@
 import Image from "next/image";
-import QuoteLeft from "../public/icons/quoteLeft.svg";
-import QuoteRight from "../public/icons/quoteRight.svg";
+
 import TypingAnimation from "./typeWrite";
 const Hero = () => {
   return (
@@ -20,7 +19,12 @@ const Hero = () => {
       <div className="mt-20">
         <div className="relative">
           <div className="opacity-40 absolute bottom-1">
-            <Image alt="quote" width={60} height={60} src={QuoteLeft} />
+            <Image
+              alt="quote"
+              width={60}
+              height={60}
+              src={"/icons/quoteLeft.svg"}
+            />
           </div>
           <span className="flex mb-4 items-center justify-center font-Russo-One text-2xl text-text1">
             {"<quote>"}

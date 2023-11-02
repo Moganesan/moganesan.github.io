@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../public/logo.svg";
 import Image from "next/image";
-import GithubLogo from "../public/technologyIcons/github.svg";
-import GithubLogoWhite from "../public/technologyIcons/github.white.svg";
-import SunLogo from "../public/icons/sunny-outline.svg";
-import MoonLogo from "../public/icons/moon-outline.svg";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
-import Menu from "../public/icons/menu.svg";
-import MenuWhite from "../public/icons/menu-white.svg";
 import Modal from "./modal";
-import CloseIcon from "../public/icons/close.svg";
 import Link from "next/link";
-import { route } from "next/dist/server/router";
 
 const Header = () => {
   const router = useRouter();
@@ -81,7 +73,13 @@ const Header = () => {
     >
       <div className="flex flex-1 smb:hidden md:flex">
         <Link passHref href="/">
-          <Image className="cursor-pointer" alt="logo" src={Logo} />
+          <Image
+            className="cursor-pointer"
+            height={50}
+            width={50}
+            alt="logo"
+            src={"/logo.svg"}
+          />
         </Link>
       </div>
       {mobileMenu ? (
@@ -126,7 +124,7 @@ const Header = () => {
 
               <li className="mt-5">
                 <button onClick={() => setMobileMenu(!mobileMenu)}>
-                  <Image alt="close" src={CloseIcon} />
+                  <Image alt="close" src={"/icons/close.svg"} />
                 </button>
               </li>
             </ul>
@@ -152,16 +150,12 @@ const Header = () => {
             rel="noreferrer"
             href="https://github.com/Moganesan/"
           >
-            {theme == "light" ? (
-              <Image alt="github" width={40} height={40} src={GithubLogo} />
-            ) : (
-              <Image
-                alt="github"
-                width={40}
-                height={40}
-                src={GithubLogoWhite}
-              />
-            )}
+            <Image
+              alt="github"
+              width={40}
+              height={40}
+              src={"/technologyIcons/github.svg"}
+            />
           </a>
         </li>
       </ul>

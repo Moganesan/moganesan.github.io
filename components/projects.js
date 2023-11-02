@@ -1,6 +1,5 @@
-import HorizontalScroll from "react-scroll-horizontal";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ForwardIcon, BackwardIcon } from "@heroicons/react/24/outline";
 import AuroraTipBotLogo from "../public/projectLogos/auroratipbot.svg";
 
