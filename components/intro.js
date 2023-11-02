@@ -13,9 +13,9 @@ const Intro = () => {
       <span className="w-2/3 text-2xl text-center smb:text-xl smb:w-full sm:w-2/3 md:w-1/2 text-text1">
         {"<p>"}
         <p className="text-white">
-          My name is Moganesan, and I'm a full-stack developer with experience
-          in various tech projects. I'm passionate about what I do and eager to
-          build somethin new.
+          My name is Moganesan, and I&apos;m a full-stack developer with
+          experience in various tech projects. I&apos;m passionate about what I
+          do and eager to build somethin new.
         </p>
         {"</p>"}
       </span>
@@ -31,12 +31,12 @@ const Intro = () => {
             <span className="text-text1 mt-5">
               {"<p>"}
               <p className="text-grey">
-                I'm a web development enthusiast with a broad skill set
+                I&apos;m a web development enthusiast with a broad skill set
                 encompassing both frontend and backend technologies. On the
                 frontend, I excel in building captivating and user-friendly
                 websites, harnessing the power of Next.js, Tailwind CSS,
                 React-Query, and TypeScript to deliver top-notch experiences.
-                For backend development, I'm well-versed in Node.js, MySQL,
+                For backend development, I&apos;m well-versed in Node.js, MySQL,
                 Firebase, and JWT, ensuring robust server-side functionality,
                 data management, and authentication. My passion for web
                 development extends to staying updated with the latest industry
@@ -61,26 +61,27 @@ const Intro = () => {
               {"<p>"}
               <p className="text-grey">
                 With one year of dedicated blockchain development experience,
-                I've honed my skills in various facets of the blockchain
+                I&apos;ve honed my skills in various facets of the blockchain
                 ecosystem. This includes EVM-based smart contract development,
                 overseeing the entire blockchain development lifecycle using
                 tools like Hardhat and Remix, and writing contracts for ERC-20
-                tokens. I've also seamlessly integrated these smart contracts
-                into user-friendly frontend applications using Ethers.js and
-                MetaMask. My work has extended to customer support, where I've
-                actively collected and implemented user feedback, enhancing the
-                usability and functionality of web3 applications. My most
-                notable achievement is my involvement in a real-world
-                decentralized application,
+                tokens. I&apos;ve also seamlessly integrated these smart
+                contracts into user-friendly frontend applications using
+                Ethers.js and MetaMask. My work has extended to customer
+                support, where I&apos;ve actively collected and implemented user
+                feedback, enhancing the usability and functionality of web3
+                applications. My most notable achievement is my involvement in a
+                real-world decentralized application,
                 <a
+                  rel="noreferrer"
                   href="https://auroratipbot.xyz/"
                   target="_blank"
                   className="text-green"
                 >
-                  "Aurora Tip Bot",
+                  &quot;Aurora Tip Bot&quot;,
                 </a>
-                where I've put my skills into action, solidifying my expertise
-                in the blockchain space.
+                where I&apos;ve put my skills into action, solidifying my
+                expertise in the blockchain space.
               </p>
               {"</p>"}
             </span>
@@ -98,13 +99,13 @@ const Intro = () => {
               {"<p>"}
               <p className="text-grey">
                 I have a deep-rooted love for tinkering with hardware and
-                electronics. Whether it's building drones, hacking gadgets, or
-                creating IoT devices, I find joy in bringing my ideas to life.
-                My curiosity and problem-solving skills drive me to explore the
-                endless possibilities of technology. My portfolio showcases my
-                journey in the world of hardware, where I turn concepts into
-                tangible solutions, fueling my passion for innovation and
-                creativity.
+                electronics. Whether it&apos;s building drones, hacking gadgets,
+                or creating IoT devices, I find joy in bringing my ideas to
+                life. My curiosity and problem-solving skills drive me to
+                explore the endless possibilities of technology. My portfolio
+                showcases my journey in the world of hardware, where I turn
+                concepts into tangible solutions, fueling my passion for
+                innovation and creativity.
               </p>
               {"</p>"}
               <br />

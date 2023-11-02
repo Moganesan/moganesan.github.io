@@ -135,8 +135,9 @@ const Header = () => {
       ) : null}
 
       <ul className="flex flex-auto sm:flex justify-between">
-        {menus.map((menu) => (
+        {menus.map((menu, index) => (
           <li
+            key={index}
             onClick={() => scrollToSection(menu.route)}
             id={menu.id}
             className={menu.class}

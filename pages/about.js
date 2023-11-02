@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Profile from "../public/about.jpeg";
 import ResponsiveDesign from "../public/services/responsiveWebdesign.svg";
 import AppDevelopment from "../public/services/appdevelopment.svg";
 import BackendDevelopment from "../public/services/backend.svg";
@@ -28,7 +27,7 @@ const About = () => {
       </h2>
       <div className="flex smb:flex-col md:px-28 md:mt-0 md:flex-row items-center self-center justify-center sm:mt-10">
         <div className="w-72 rounded-xl md:self-start smb:self-center overflow-hidden flex items-center justify-center mt-10">
-          <Image alt="profile" src={Profile} />
+          <Image alt="profile" src={"/about.jpeg"} />
         </div>
         <div className="smb:mt-5 smb:w-full smb:p-5 md:ml-20 md:mt-0 md:p-10 md:w-full sm:ml-40 w-1/2">
           <h3 className="text-3xl font-bold text-purple">Learn about me</h3>

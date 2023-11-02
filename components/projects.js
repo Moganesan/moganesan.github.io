@@ -29,21 +29,22 @@ const Projects = () => {
           (Telegram Bot Server): The backend component is responsible for
           managing the Aurora Telegram bot. To engage with the system, users
           must first link their Metamask wallet to their Telegram account. This
-          is achieved by sending a "/login walletaddress request to the Aurora
-          Community Tip Bot deployed within the Telegram environment. The bot
-          responds with a login URL upon successful connection. Once the wallet
-          address is linked to Telegram, users can utilize the "/balance"
-          command to check their token balance. To initiate tips to other
-          Telegram users, they can visit any public group and use the "/tip{" "}
-          amount recipientusername" command. The bot takes care of the
-          transaction, updating the balance within the contract. Subsequently,
-          recipients can withdraw their tipped tokens through the frontend
-          interface. In summary, this project's goal is to create a seamless and
-          user-friendly ecosystem for tipping Aurora tokens to Telegram users.
-          The Frontend, Backend, and Smart Contract components work to enable
-          users to connect their wallets, deposit tokens, and effortlessly send
-          tips to their fellow Telegram users, enhancing the utility and
-          accessibility of Aurora tokens within the Telegram community.
+          is achieved by sending a &quot;/login walletaddress request to the
+          Aurora Community Tip Bot deployed within the Telegram environment. The
+          bot responds with a login URL upon successful connection. Once the
+          wallet address is linked to Telegram, users can utilize the
+          &quot;/balance&quot; command to check their token balance. To initiate
+          tips to other Telegram users, they can visit any public group and use
+          the &quot;/tip amount recipientusername&quot; command. The bot takes
+          care of the transaction, updating the balance within the contract.
+          Subsequently, recipients can withdraw their tipped tokens through the
+          frontend interface. In summary, this project&apos;s goal is to create
+          a seamless and user-friendly ecosystem for tipping Aurora tokens to
+          Telegram users. The Frontend, Backend, and Smart Contract components
+          work to enable users to connect their wallets, deposit tokens, and
+          effortlessly send tips to their fellow Telegram users, enhancing the
+          utility and accessibility of Aurora tokens within the Telegram
+          community.
         </p>
       ),
       tags: [
@@ -71,9 +72,6 @@ const Projects = () => {
     setSelectedProject((prev) => (prev === 0 ? prev : prev - 1));
   };
 
-  useEffect(() => {
-    console.log("Selected Product", projects[selectedProject]);
-  }, []);
   return (
     <div className="mt-20 md:px-44 smb:px-2 mb-10">
       <span className="text-text1 text-4xl font-bold flex items-center justify-center">
@@ -95,7 +93,7 @@ const Projects = () => {
             <path
               d="M412.56 321.475L412.534 321.5H303.594V298.348V297.848H303.094H219.435H135.776H135.276V298.348V321.5H0.5V47.8889L18.7204 24.1641L36.894 0.5L108.242 0.500001V6.42572V6.92572H108.742H167.571V13.2084V13.7084H168.071H437.038L461.5 70.7858V274.483L461.483 274.499L460.99 274.972L459.158 276.732L452.945 282.697L437.021 297.987C432.212 302.606 426.054 308.519 421.098 313.277L414.885 319.243L413.053 321.002L412.56 321.475Z"
               fill="#01FF94"
-              fill-opacity="0.05"
+              fillOpacity="0.05"
               stroke="#01FF94"
             />
             <foreignObject x="10" y="10" width="100%" height="100%">
@@ -123,9 +121,9 @@ const Projects = () => {
           {projects[selectedProject]?.description}
 
           <div className="grid grid-flow-row gap-10 mt-10 smb:grid-cols-2 md:grid-cols-4">
-            {projects[selectedProject]?.tags.map((tag) => {
+            {projects[selectedProject]?.tags.map((tag, index) => {
               return (
-                <div>
+                <div key={index}>
                   <span className="px-5 py-2 border bg-greenBackground border-transparent text-center hover:border-green duration-500 overflow-hidden whitespace-nowrap text-ellipsis">
                     {tag}
                   </span>
@@ -135,6 +133,7 @@ const Projects = () => {
           </div>
           <div className="mt-10">
             <a
+              rel="noreferrer"
               href={projects[selectedProject].link}
               target="_blank"
               className="px-6 py-2 border border-green hover:bg-greenBackground2 duration-500"

@@ -1,4 +1,3 @@
-import Profile from "../public/profile.jpg";
 import Image from "next/image";
 import QuoteLeft from "../public/icons/quoteLeft.svg";
 import QuoteRight from "../public/icons/quoteRight.svg";
@@ -9,14 +8,14 @@ const Hero = () => {
       <span className="flex mb-4 items-center justify-center font-Russo-One md:text-3xl sm:text-xl smb:text-xl text-text1">
         {"<h2>"}
         <h3 className="font-Russo-One md:text-3xl text-green sm:text-xl text-center smb:text-xl">
-          I'm excited to do,
+          I&apos;m excited to do,
         </h3>
         {"</h2>"}
       </span>
 
       <TypingAnimation />
       <div className={`mt-20 w-60 h-60 overflow-hidden rounded-full anime`}>
-        <Image alt="profile" src={Profile} />
+        <Image alt="profile" src={"profile.jpg"} />
       </div>
       <div className="mt-20">
         <div className="relative">

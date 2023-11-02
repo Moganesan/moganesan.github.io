@@ -1,4 +1,3 @@
-import CoverImage from "../public/platforms.jpg";
 import Image from "next/image";
 const Platforms = () => {
   return (
@@ -11,7 +10,7 @@ const Platforms = () => {
         both android and ios.
       </p>
       <p></p>
-      <Image alt="sample" src={CoverImage} />
+      <Image alt="sample" src={"/platform.jpg"} />
     </div>
   );
 };
