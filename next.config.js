@@ -5,7 +5,8 @@ module.exports = {
     loader: "imgix",
     path: "/",
   },
-  experimental: {
-    appDir: false,
+  output: "export",
+  images: {
+    unoptimized: true,
   },
 };
