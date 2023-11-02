@@ -3,7 +3,7 @@ import Image from "next/image";
 import TypingAnimation from "./typeWrite";
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center smb:p-10 md:p-20 sm:p-14 dark:bg-darkBackground2 text-black2 dark:text-white2  p-28">
+    <div className="flex flex-col items-center dark:bg-darkBackground2 text-black2 dark:text-white2 smb:py-10 md:py-40 smb:px-3 md:px-0">
       <span className="flex mb-4 items-center justify-center font-Russo-One md:text-3xl sm:text-xl smb:text-xl text-text1">
         {"<h2>"}
         <h3 className="font-Russo-One md:text-3xl text-green sm:text-xl text-center smb:text-xl">
@@ -26,17 +26,17 @@ const Hero = () => {
               src={"./icons/quoteLeft.svg"}
             />
           </div>
-          <span className="flex mb-4 items-center justify-center font-Russo-One text-2xl text-text1">
+          <span className="flex mb-4 items-center justify-center font-Russo-One smb:text-md md:text-2xl text-text1">
             {"<quote>"}
-            <p className="font-bold text-2xl text-green">
+            <p className="font-bold smb:text-md md:text-2xl text-green">
               The Master has failed more times than the beginner has tried.
             </p>
             {"</quote>"}
           </span>
         </div>
-        <span className="mb-4 flex items-center justify-end font-Russo-One text-xl text-text1">
+        <span className="mb-4 flex items-center justify-end font-Russo-One smb:text-sm md:text-xl text-text1">
           {"<author>"}
-          <p className="text-xl text-green">-Stephen McCranie</p>
+          <p className="md:text-xl smb:text-sm text-green">-Stephen McCranie</p>
           {"<author>"}
         </span>
       </div>

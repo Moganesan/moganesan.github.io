@@ -43,25 +43,25 @@ const Header = () => {
       name: "Home",
       id: "home-menu",
       route: "home",
-      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green w-32 flex items-center justify-center"}`,
+      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green md:w-32 flex items-center justify-center"}`,
     },
     {
       name: "About",
       route: "about",
       id: "about-menu",
-      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green w-32 flex items-center justify-center"}`,
+      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green md:w-32 flex items-center justify-center"}`,
     },
     {
       name: "Projects",
       route: "projects",
       id: "work-menu",
-      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green w-32 flex items-center justify-center"}`,
+      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green md:w-32 flex items-center justify-center"}`,
     },
     {
       name: "Contact",
       route: "contact",
       id: "contact-menu",
-      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green w-32 flex items-center justify-center"}`,
+      class: `${"duration-500 p-2 cursor-pointer font-bold hover:border-green border border-transparent text-green md:w-32 flex items-center justify-center"}`,
     },
   ];
 
