@@ -78,7 +78,7 @@ const Header = () => {
             height={50}
             width={50}
             alt="logo"
-            src={"/logo.svg"}
+            src={"./logo.svg"}
           />
         </Link>
       </div>
@@ -124,7 +124,7 @@ const Header = () => {
 
               <li className="mt-5">
                 <button onClick={() => setMobileMenu(!mobileMenu)}>
-                  <Image alt="close" src={"/icons/close.svg"} />
+                  <Image alt="close" src={"./icons/close.svg"} />
                 </button>
               </li>
             </ul>
@@ -154,7 +154,7 @@ const Header = () => {
               alt="github"
               width={40}
               height={40}
-              src={"/technologyIcons/github.svg"}
+              src={"./technologyIcons/github.svg"}
             />
           </a>
         </li>

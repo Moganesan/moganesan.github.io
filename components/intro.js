@@ -18,7 +18,7 @@ const Intro = () => {
           <div className="container items-center flex flex-col  p-10">
             <Image
               alt="designer"
-              src={"/icons/brish.svg"}
+              src={"./icons/brish.svg"}
               width={100}
               height={100}
             />
@@ -52,7 +52,7 @@ const Intro = () => {
           <div className="container items-center flex flex-col  p-10">
             <Image
               alt="designer"
-              src={"/icons/blockchain.svg"}
+              src={"./icons/blockchain.svg"}
               width={100}
               height={100}
             />
@@ -95,7 +95,7 @@ const Intro = () => {
           <div className="container items-center flex flex-col  p-10">
             <Image
               alt="designer"
-              src={"/icons/drone.svg"}
+              src={"./icons/drone.svg"}
               width={100}
               height={100}
             />

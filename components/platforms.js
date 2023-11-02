@@ -10,7 +10,7 @@ const Platforms = () => {
         both android and ios.
       </p>
       <p></p>
-      <Image alt="sample" src={"/platform.jpg"} />
+      <Image alt="sample" src={"./platform.jpg"} />
     </div>
   );
 };

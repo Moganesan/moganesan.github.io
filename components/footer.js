@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <hr className="h-1 bg-green" />
       <div className="flex flex-col items-center p-16 relative bg-darkBackground2">
-        <Image alt="logo" src={"/logo-white.svg"} width={50} height={50} />
+        <Image alt="logo" src={"./logo-white.svg"} width={50} height={50} />
         <h3 className="font-Varela-Round text-white opacity-60 mt-6 text-lg">
           Grind , Create & Achieve.
         </h3>
@@ -53,7 +53,7 @@ const Footer = () => {
           &copy;developed by{" "}
           <Image
             alt="heart-icon"
-            src={"/icons/heart.svg"}
+            src={"./icons/heart.svg"}
             width={10}
             height={10}
           />{" "}
@@ -63,13 +63,13 @@ const Footer = () => {
           <span>Made with</span>
           <Image
             alt="react-logo"
-            src={"/icons/react.svg"}
+            src={"./icons/react.svg"}
             width={20}
             height={20}
           />
           <Image
             alt="next-logo"
-            src={"/icons/next.svg"}
+            src={"./icons/next.svg"}
             width={20}
             height={20}
           />

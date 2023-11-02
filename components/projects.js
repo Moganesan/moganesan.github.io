@@ -101,7 +101,7 @@ const Projects = () => {
                 className="px-10 py-10 h-full w-full flex items-center justify-center"
               >
                 <Image
-                  src={AuroraTipBotLogo}
+                  src={"./projectLogos/auroratipbot.svg"}
                   width={350}
                   height={150}
                   alt="auroratipbot"
