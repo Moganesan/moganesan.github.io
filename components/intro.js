@@ -18,7 +18,7 @@ const Intro = () => {
           <div className="container items-center flex flex-col  p-10">
             <Image
               alt="designer"
-              src={"./icons/brish.svg"}
+              src={"./icons/brush.svg"}
               width={100}
               height={100}
             />
