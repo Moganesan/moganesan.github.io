@@ -15,7 +15,7 @@ const Hero = () => {
 
       <TypingAnimation />
       <div className={`mt-20 w-60 h-60 overflow-hidden rounded-full anime`}>
-        <Image alt="profile" src={"profile.jpg"} />
+        <Image alt="profile" src={"/profile.jpg"} width={300} height={300} />
       </div>
       <div className="mt-20">
         <div className="relative">
