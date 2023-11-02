@@ -3,7 +3,7 @@ import Image from "next/image";
 import BrushIcon from "../public/icons/brush.svg";
 import CodeIcon from "../public/icons/code.svg";
 import YoutubeIcon from "../public/icons/youtube.svg";
-import BlockchainIcon from "../public/icons/Blockchain.svg";
+import BlockchainIcon from "../public/icons/blockchain.svg";
 import DroneIcon from "../public/icons/drone.svg";
 import Hero from "../components/heroContainer";
 
