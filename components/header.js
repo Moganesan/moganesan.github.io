@@ -75,8 +75,8 @@ const Header = () => {
         <Link passHref href="/">
           <Image
             className="cursor-pointer"
-            height={50}
-            width={50}
+            height={40}
+            width={40}
             alt="logo"
             src={"./logo.svg"}
           />

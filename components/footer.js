@@ -49,14 +49,15 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        <p className="text-white mt-7">
+        <p className="text-white flex mt-7">
           &copy;developed by{" "}
           <Image
             alt="heart-icon"
             src={"./icons/heart.svg"}
             width={10}
             height={10}
-          />{" "}
+          />
+          {"  "}
           <span className="underline font-bold">Moganesan</span>
         </p>
         <div className="text-white opacity-50 flex w-40 mt-5 items-center justify-around">
@@ -82,7 +83,7 @@ const Footer = () => {
 
 const StartProject = () => {
   return (
-    <div style={{ bottom: 360 }} className="absolute z-50">
+    <div style={{ bottom: 365 }} className="absolute z-50">
       <Link passHref href="/contact">
         <button className="bg-black2 border border-green text-white shadow-2xl rounded-3xl font-bold w-44  p-4">
           Start Your Project
