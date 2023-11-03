@@ -7,9 +7,9 @@ const Intro = () => {
       <span className="w-2/3 text-2xl text-center smb:text-xl smb:w-full sm:w-2/3 md:w-1/2 text-text1">
         {"<p>"}
         <p className="text-white">
-          My name is Moganesan, and I&apos;m a full-stack developer with
-          experience in various tech projects. I&apos;m passionate about what I
-          do and eager to build somethin new.
+          My name is Moganesan, and I&apos;m a full-stack developer i have well
+          experience in various tech projects. and I&apos;m passionate about
+          what I do and i eager to build something new.
         </p>
         {"</p>"}
       </span>
