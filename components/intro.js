@@ -129,7 +129,7 @@ const Intro = () => {
                   <li>Arduino</li>
                   <li>NodeMCU</li>
                   <li>STM 32 Microcontroller</li>
-                  <li>Rashberry Pi</li>
+                  <li>Raspberry Pi</li>
                 </ul>
                 {"</ul>"}
               </span>
