@@ -8,7 +8,7 @@ const Projects = () => {
   const [projects, setProject] = useState([
     {
       id: 1,
-      name: "Aurora Tip Box",
+      name: "Aurora Tip Bot",
       category: "Web Application",
       link: "https://auroratipbot.xyz/",
       image: "./projectLogos/auroratipbot.svg",
