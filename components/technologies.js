@@ -13,6 +13,7 @@ import AWSLogo from "../public/technologyIcons/aws.svg";
 import GraphLogo from "../public/technologyIcons/graph.svg";
 import HardhatLogo from "../public/technologyIcons/hardhat.svg";
 import AuroraLogo from "../public/technologyIcons/aurora.svg";
+import TypeScriptLogo from "../public/technologyIcons/typescript.svg";
 import Python from "../public/technologyIcons/python.svg";
 import Css from "../public/technologyIcons/css.svg";
 import ArduinoLogo from "../public/technologyIcons/arduino.svg";
@@ -37,6 +38,9 @@ const Technologies = () => {
       <div className="grid smb:grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10 justify-center justify-items-center justify-self-center content-center items-center">
         <div className="border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500 p-5">
           <Image alt="javascript" src={JavaScript} />
+        </div>
+        <div className="border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500 p-5">
+          <Image alt="typescript" src={TypeScriptLogo} />
         </div>
         <div className="border-2 border-transparent hover:border-green bg-greenBackground hover:bg-greenBackground2 duration-500 p-5">
           <Image alt="css" src={Css} />
