@@ -265,7 +265,7 @@ const About = () => {
               className="mt-4"
             >
               <div className="px-6 py-2 border flex items-center w-fit border-green hover:bg-greenBackground2 duration-500">
-                <VideoCameraIcon className="w-5 h-5" />
+                <VideoCameraIcon className="w-5 h-5 mr-3" />
                 <span>View On Youtube</span>
               </div>
             </Link>
@@ -281,6 +281,7 @@ const About = () => {
                   src={"/technologyicons/github.svg"}
                   width={15}
                   height={15}
+                  className="mr-3"
                 />
                 <span>Github</span>
               </div>
