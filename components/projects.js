@@ -15,6 +15,11 @@ const Projects = () => {
       description: (
         <div>
           <br />
+          <span className="px-5 py-2 border bg-greenBackground border-transparent text-center text-green border-green duration-500 overflow-hidden whitespace-nowrap text-ellipsis">
+            Production DApp
+          </span>
+          <br />
+          <br />
           <h1>Summary:</h1>
           <br />
           <p>
@@ -84,7 +89,6 @@ const Projects = () => {
       image: "./projectLogos/klvien.svg",
       description: (
         <div>
-          <br />
           <h1>Summary:</h1>
           <br />
           <p>
@@ -132,6 +136,62 @@ const Projects = () => {
         "JWT",
         "Vercel",
         "Node.js",
+      ],
+    },
+
+    {
+      id: 3,
+      name: "XDC Vault - A Secure Crypto Wllet for XDC Network.",
+      category: "Web Application",
+      link: "https://devfolio.co/projects/xdcvault-a-secure-crypto-wallet-8670",
+      image: "./projectLogos/xdcvault.svg",
+      description: (
+        <div>
+          <br />
+          <span className="px-5 py-2 border bg-greenBackground border-transparent text-center text-green border-green duration-500 overflow-hidden whitespace-nowrap text-ellipsis">
+            Hackathon Project
+          </span>
+          <br />
+          <br />
+          <h1>Summary:</h1>
+          <br />
+          <p>
+            XDCVault: Where Unwavering Security Meets User-Centric Innovation.
+            Experience the Future of Crypto Wallets, Fortified with Advanced
+            Encryption, Multiple Wallet Support, and Intuitive Face Recognition.
+          </p>
+          <br />
+          <h2>Key Features:</h2>
+          <br />
+          <ul>
+            <li>
+              Security: XDCVault employs advanced encryption algorithms,
+              including PBKDF2, AES-GCM, and SHA-256, to protect user passwords
+              and wallet private keys.
+            </li>
+            <li>
+              Multiple Wallets: XDCVault supports multiple wallets, making it
+              versatile for users with various crypto assets.
+            </li>
+            <li>
+              User-Friendly: It offers functions like importing existing
+              wallets, creating new wallets, and exporting wallet private keys
+              securely.
+            </li>
+            <li>
+              Face Recognition: A standout feature is the use of face
+              recognition for user wallet creation, enhancing KYC.
+            </li>
+          </ul>
+        </div>
+      ),
+      tags: [
+        "Next.js",
+        "Headless UI",
+        "Tailwindcss",
+        "Ethers.js",
+        "Typescript",
+        "Vercel",
       ],
     },
   ]);

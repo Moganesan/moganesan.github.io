@@ -4,6 +4,7 @@ import {
   ForwardIcon,
   BackwardIcon,
   DocumentTextIcon,
+  VideoCameraIcon,
 } from "@heroicons/react/24/outline";
 import AuroraTipBotLogo from "../public/projectLogos/auroratipbot.svg";
 import Link from "next/link";
@@ -242,17 +243,46 @@ const About = () => {
               Arduino Projects
             </span>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 flex smb:flex-col md:flex-row md:items-center justify-between">
             <Link
               rel="noreferrer"
               href={
                 "https://www.canva.com/design/DAFzg7_nXBM/2R5PkzQpAmn-NzQipAgThg/edit"
               }
               target="_blank"
+              className="mt-4"
             >
               <div className="px-6 py-2 border flex items-center w-fit border-green hover:bg-greenBackground2 duration-500">
                 <DocumentTextIcon className="w-5 h-5 mr-3" />
                 <span>Resume</span>
+              </div>
+            </Link>
+
+            <Link
+              rel="noreferrer"
+              href={"https://www.youtube.com/@moganesanm973"}
+              target="_blank"
+              className="mt-4"
+            >
+              <div className="px-6 py-2 border flex items-center w-fit border-green hover:bg-greenBackground2 duration-500">
+                <VideoCameraIcon className="w-5 h-5" />
+                <span>View On Youtube</span>
+              </div>
+            </Link>
+
+            <Link
+              rel="noreferrer"
+              href={"https://github.com/moganesan"}
+              target="_blank"
+              className="mt-4"
+            >
+              <div className="px-6 py-2 border flex items-center w-fit border-green hover:bg-greenBackground2 duration-500">
+                <Image
+                  src={"/technologyicons/github.svg"}
+                  width={15}
+                  height={15}
+                />
+                <span>Github</span>
               </div>
             </Link>
           </div>
