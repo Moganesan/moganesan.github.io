@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-darkBackground1 text-white">
       <Head>
-        <title>Moganesan - Developer, Designed & Content Creator.</title>
+        <title>Moganesan - Full Stack Developer</title>
       </Head>
       <div id="home">
         <Hero />
