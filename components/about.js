@@ -221,7 +221,7 @@ const About = () => {
             dedicated to contributing as much as possible to this ever-evolving
             space.
           </p>
-
+          {/* 
           <div className="grid gap-10 mt-10 smb:grid-cols-2 md:grid-cols-4">
             <span className="px-5 py-2 border bg-greenBackground border-transparent text-center hover:border-green duration-500 overflow-hidden whitespace-nowrap text-ellipsis">
               Foot Ball
@@ -242,7 +242,7 @@ const About = () => {
             <span className="px-5 py-2 border bg-greenBackground border-transparent text-center hover:border-green duration-500 overflow-hidden whitespace-nowrap text-ellipsis">
               Arduino Projects
             </span>
-          </div>
+          </div> */}
           <div className="mt-10 flex smb:flex-col md:flex-row md:items-center justify-between">
             <Link
               rel="noreferrer"
