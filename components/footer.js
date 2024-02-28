@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex flex-col items-center p-16 relative bg-darkBackground2">
         <Image alt="logo" src={"./logo-white.svg"} width={50} height={50} />
         <div className="flex items-center w-24 justify-between mt-5">
-          <Link href={"https://www.linkedin.com/in/moganesan-6a7533172/"}>
+          <Link href={"https://www.linkedin.com/in/moganesan/"}>
             <div className="IconContainer">
               <svg
                 className="Icon"
