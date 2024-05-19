@@ -10,7 +10,7 @@ const Projects = () => {
       id: 1,
       name: "Aurora Tip Bot",
       category: "Web Application",
-      link: "https://auroratipbot.xyz/",
+      link: "https://www.youtube.com/watch?v=ysIC9ruTxVE&t=190s",
       image: "./projectLogos/auroratipbot.svg",
       description: (
         <div>
